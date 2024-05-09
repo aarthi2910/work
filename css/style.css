@@ -15,18 +15,18 @@
 }
 
 /* Style the table */
-#myTable {
+/* #myTable {
     border-collapse: collapse;
     width: 100%;
-}
+} */
 
-#myTable th, #myTable td {
+/* #myTable th, #myTable td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
-}
+} */
 
-#myTable th {
+/* #myTable th {
     background-color: #f2f2f2;
     color: black;
-}
+} */

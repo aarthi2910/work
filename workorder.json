@@ -1,177 +1,177 @@
 [
-  {
-    "won": "WON/19/0004",
-    "so": "SO294",
-    "job_location": "Test Location 1",
-    "sale_type": "Repetitive Service",
-    "start_dates": ["11/05/2024", "12/05/2024", "01/05/2025"],
-    "end_dates": ["11/30/2024", "12/31/2024", "01/31/2025"],
-    "status": "Planned",
-    "skills_required": [
-      {
-        "skill": "Gardening",
-        "weightage": 3
-      },
-      {
-        "skill": "Gardening trainee",
-        "weightage": 2
-      }
-    ],
-    "duration_of_work": "1 month",
-    "price_of_work": {
-      "monthly_price": 5500,
-      "total_price": "Monthly Service Fee: $5500"
+    {
+        "won": "WON/19/0004",
+        "so": "SO294",
+        "job_location": "Test Location 1",
+        "sale_type": "Repetitive Service",
+        "start_dates": ["11/05/2024", "12/05/2024", "01/05/2025"],
+        "end_dates": ["11/30/2024", "12/31/2024", "01/31/2025"],
+        "status": "Planned",
+        "skills_required": [
+            { 
+                "skill": "Gardening",
+                "weightage": 3
+            },
+            {
+                "skill": "Gardening trainee",
+                "weightage": 2
+            }
+        ],
+        "duration_of_work": "1 month",
+        "price_of_work": {
+            "monthly_price": 5500,
+            "total_price": "Monthly Service Fee: $5500"
+        },
+        "assigned_personnel": [
+            {
+                "name": "Alice Johnson",
+                "experience": "4 years",
+                "skill": "Gardening",
+                "weightage": 3
+            },
+            {
+                "name": "Bob Smith",
+                "experience": "2 years",
+                "skill": "Gardening trainee",
+                "weightage": 2
+            }
+        ]
     },
-    "assigned_personnel": [
-      {
-        "name": "Alice Johnson",
-        "experience": "4 years",
-        "skill": "Gardening",
-        "weightage": 3
-      },
-      {
-        "name": "Bob Smith",
-        "experience": "2 years",
-        "skill": "Gardening trainee",
-        "weightage": 2
-      }
-    ]
-  },
-  {
-    "won": "WON/19/0005",
-    "so": "SO295",
-    "job_location": "Sample Location 2",
-    "sale_type": "One-time Service",
-    "start_time": "11/10/2024",
-    "end_time": "11/10/2024",
-    "status": "Completed",
-    "skills_required": [
-      {
-        "skill": "Gardening trainee",
-        "weightage": 2
-      },
-      {
-        "skill": "Cleaning",
-        "weightage": 1
-      }
-    ],
-    "duration_of_work": "1 day",
-    "price_of_work": {
-      "monthly_price": 1200,
-      "total_price": "Service Fee: $1200"
+    {
+        "won": "WON/19/0005",
+        "so": "SO295",
+        "job_location": "Sample Location 2",
+        "sale_type": "One-time Service",
+        "start_time": "11/10/2024",
+        "end_time": "11/10/2024",
+        "status": "Completed",
+        "skills_required": [
+        {
+            "skill": "Gardening trainee",
+            "weightage": 2
+        },
+        {
+            "skill": "Cleaning",
+            "weightage": 1
+        }
+        ],
+        "duration_of_work": "1 day",
+        "price_of_work": {
+        "monthly_price": 1200,
+        "total_price": "Service Fee: $1200"
+        },
+        "assigned_personnel": [
+        {
+            "name": "Charlie Brown",
+            "experience": "3 years",
+            "skill": "Gardening",
+            "weightage": 2
+        },
+        {
+            "name": "Diana Johnson",
+            "experience": "1 year",
+            "skill": "Cleaning",
+            "weightage": 1
+        }
+        ]
     },
-    "assigned_personnel": [
-      {
-        "name": "Charlie Brown",
-        "experience": "3 years",
-        "skill": "Gardening",
-        "weightage": 2
-      },
-      {
-        "name": "Diana Johnson",
-        "experience": "1 year",
-        "skill": "Cleaning",
-        "weightage": 1
-      }
-    ]
-  },
-  {
-    "won": "WON/19/0006",
-    "so": "SO296",
-    "job_location": "Example Location 3",
-    "sale_type": "Emergency Service",
-    "start_time": "11/15/2024",
-    "end_time": "11/15/2024",
-    "status": "In Progress",
-    "skills_required": [
-      {
-        "skill": "Emergency Response",
-        "weightage": 3
-      }
-    ],
-    "duration_of_work": "1 day",
-    "price_of_work": {
-      "monthly_price": 1800,
-      "total_price": "Service Fee: $1800"
+    {
+        "won": "WON/19/0006",
+        "so": "SO296",
+        "job_location": "Example Location 3",
+        "sale_type": "Emergency Service",
+        "start_time": "11/15/2024",
+        "end_time": "11/15/2024",
+        "status": "In Progress",
+        "skills_required": [
+        {
+            "skill": "Emergency Response",
+            "weightage": 3
+        }
+        ],
+        "duration_of_work": "1 day",
+        "price_of_work": {
+        "monthly_price": 1800,
+        "total_price": "Service Fee: $1800"
+        },
+        "assigned_personnel": []
     },
-    "assigned_personnel": []
-  },
-  {
-    "won": "WON/19/0007",
-    "so": "SO297",
-    "job_location": "Test Location 4",
-    "sale_type": "Repetitive Service",
-    "start_dates": ["12/01/2024", "01/01/2025", "02/01/2025"],
-    "end_dates": ["12/31/2024", "01/31/2025", "02/28/2025"],
-    "status": "Planned",
-    "skills_required": [
-      {
-        "skill": "Gardening",
-        "weightage": 3
-      },
-      {
-        "skill": "Gardening trainee",
-        "weightage": 2
-      }
-    ],
-    "duration_of_work": "1 month",
-    "price_of_work": {
-      "monthly_price": 6000,
-      "total_price": "Monthly Service Fee: $6000"
+    {
+        "won": "WON/19/0007",
+        "so": "SO297",
+        "job_location": "Test Location 4",
+        "sale_type": "Repetitive Service",
+        "start_dates": ["12/01/2024", "01/01/2025", "02/01/2025"],
+        "end_dates": ["12/31/2024", "01/31/2025", "02/28/2025"],
+        "status": "Planned",
+        "skills_required": [
+        {
+            "skill": "Gardening",
+            "weightage": 3
+        },
+        {
+            "skill": "Gardening trainee",
+            "weightage": 2
+        }
+        ],
+        "duration_of_work": "1 month",
+        "price_of_work": {
+        "monthly_price": 6000,
+        "total_price": "Monthly Service Fee: $6000"
+        },
+        "assigned_personnel": [
+        {
+            "name": "Alice Johnson",
+            "experience": "4 years",
+            "skill": "Gardening",
+            "weightage": 3
+        },
+        {
+            "name": "Bob Smith",
+            "experience": "2 years",
+            "skill": "Gardening trainee",
+            "weightage": 2
+        }
+        ]
     },
-    "assigned_personnel": [
-      {
-        "name": "Alice Johnson",
-        "experience": "4 years",
-        "skill": "Gardening",
-        "weightage": 3
-      },
-      {
-        "name": "Bob Smith",
-        "experience": "2 years",
-        "skill": "Gardening trainee",
-        "weightage": 2
-      }
-    ]
-  },
-  {
-    "won": "WON/19/0008",
-    "so": "SO298",
-    "job_location": "Sample Location 5",
-    "sale_type": "One-time Service",
-    "start_time": "12/05/2024",
-    "end_time": "12/05/2024",
-    "status": "Completed",
-    "skills_required": [
-      {
-        "skill": "Gardening",
-        "weightage": 2
-      },
-      {
-        "skill": "Cleaning",
-        "weightage": 1
-      }
-    ],
-    "duration_of_work": "1 day",
-    "price_of_work": {
-      "monthly_price": 1300,
-      "total_price": "Service Fee: $1300"
+    {
+        "won": "WON/19/0008",
+        "so": "SO298",
+        "job_location": "Sample Location 5",
+        "sale_type": "One-time Service",
+        "start_time": "12/05/2024",
+        "end_time": "12/05/2024",
+        "status": "Completed",
+        "skills_required": [
+        {
+            "skill": "Gardening",
+            "weightage": 2
+        },
+        {
+            "skill": "Cleaning",
+            "weightage": 1
+        }
+        ],
+        "duration_of_work": "1 day",
+        "price_of_work": {
+        "monthly_price": 1300,
+        "total_price": "Service Fee: $1300"
+        },
+        "assigned_personnel": [
+        {
+            "name": "Eva Martinez",
+            "experience": "2 years",
+            "skill": "Gardening",
+            "weightage": 2
+        },
+        {
+            "name": "Franklin Wang",
+            "experience": "1 year",
+            "skill": "Cleaning",
+            "weightage": 1
+        }
+        ]
     },
-    "assigned_personnel": [
-      {
-        "name": "Eva Martinez",
-        "experience": "2 years",
-        "skill": "Gardening",
-        "weightage": 2
-      },
-      {
-        "name": "Franklin Wang",
-        "experience": "1 year",
-        "skill": "Cleaning",
-        "weightage": 1
-      }
-    ]
-  },
   
     {
       "won": "WON/19/0009",
