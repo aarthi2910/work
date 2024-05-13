@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add Child</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/work_order.css">
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-2.922.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.3.0/crypto-js.js"></script>
+        <script src="js/work_order.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <!--Child basi info Form-->
+            <div id="workorder"><br>
+                <div class="card_center">
+                    <div class="card child_basic_card" style="background: #cfcfd1;">
+                        <h2 class="card_title" style="text-align: center;">Work order</h2><br>
+                        <div class="success-msg alert alert-success">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Success!</strong> Work Order information saved successfully!
+                        </div>   
+                        <div class="error-msg alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            <strong>Oops!</strong> You have to fill all the fields!
+                        </div>   
+                        <div class="container" id="avf_form">
+                            <form id="work_order_form">
+                                <fieldset class="wizard-fieldset">
+                                    <div class="container">
+                                        <div class="panel panel-info">
+                                            <!-- Admission form body -->
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group">
+                                                            <label for="won" class="form-label"><b>Work Order No
+                                                            </b></label><br>
+                                                            <input name="won" type="text" maxlength="20" 
+                                                            class="form-control" id="won"> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group">
+                                                            <label for="so" class="form-label"><b>So No
+                                                            </b></label><br>
+                                                            <input name="so" type="text" maxlength="20" 
+                                                            class="form-control" id="so">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group"> 
+                                                            <label for="job_location" class="form-label"><b>Job Location</b></label>
+                                                            <input type="text" class="form-control" id="job_location"
+                                                                name="job_location"/>  
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="row">
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group">
+                                                            <label for="sale_type" class="form-label"><b>Sale Type
+                                                            </b></label><br>
+                                                            <select class="form-control" name="sale_type" id="sale_type">
+                                                                <option selected disabled>Select Sale Type</option>
+                                                                <option value="Repetitive Service">Repetitive Service</option>
+                                                                <option value="One-time Service">One-time Service</option>
+                                                                <option value="Emergency Service">Emergency Service</option>
+                                                            </select>
+                                                            <i class="fa fa-chevron-down"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group">
+                                                            <label for="start_dates" class="form-label"><b>Planned Start Datetime
+                                                            </b></label><br>
+                                                            <input name="start_dates" type="date" maxlength="20" 
+                                                            class="form-control" id="start_dates">
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group"> 
+                                                            <label for="end_dates" class="form-label"><b>Planned End Datetime</b></label>
+                                                            <input type="date" class="form-control" id="end_dates"
+                                                                name="end_dates"/>  
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                   <div class="col-sm m-3">
+                                                        <div class="form-group"> 
+                                                            <label for="duration_of_work" class="form-label"><b>Duration Of Work</b></label>
+                                                            <input type="text" class="form-control" id="duration_of_work"
+                                                                name="duration_of_work"/>  
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group"> 
+                                                            <label class="col-form-label"><b>Skills</b></label>
+                                                            <select class="form-control" name="skills_required" id="skills_required">
+                                                                <option selected disabled>Select Skill</option>
+                                                                <option value="Gardening">Gardening</option>
+                                                                <option value="Gardening trainee">Gardening trainee</option>
+                                                            </select>
+                                                            <i class="fa fa-chevron-down"></i>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-sm m-3">
+                                                        <div class="form-group"> 
+                                                            <label class="col-form-label"><b>Weightage</b></label>
+                                                            <input type="text" class="form-control" id="weightage"
+                                                                name="weightage"/>  
+                                                        </div>
+                                                    </div>
+                                                </div>          
+                                            </div>                                             
+                                            <div class="panel-footer">
+                                                <div class="form-group clearfix m-5">
+                                                    <div class="text-center">
+                                                        <button class="add-btn" id="work_order_add">Add</button>
+                                                        <button class="cancel-btn">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                    </div>
+                                </fieldset>               
+                            </form>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
